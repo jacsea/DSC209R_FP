@@ -9,11 +9,18 @@
     
     <!-- Mapbox GL JS CSS -->
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet"/>
-    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
     <script src="map.js" type="module"></script>
 </head>
 <body>
     <h2>Inspecting U.S. Voter Turnout</h2>
+    <div id = "year-controls">
+        <label id = "year-filter"> Year:</label>
+        <input type="range" id="year-slider" min="1980" max="2022" step="2" value="1980">
+        <span id="year-value">1980</span>
+    </div>
     <div id="map"></div>
 </body>
 </html>
